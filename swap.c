@@ -1,3 +1,10 @@
+void ssort(int arr[], int l)
+{
+    for (int i = 0; i < l; i++)
+    {
+        swap_max(arr, l, i);
+    }
+}
 gvoid swap_max(int arr[], int l, int n)
 {
     int t = 0;
@@ -15,10 +22,4 @@ gvoid swap_max(int arr[], int l, int n)
     arr[s] = arr[n];
     arr[n] = t;
 }
-void ssort(int arr[], int l)
-{
-    for (int i = 0; i < l; i++)
-    {
-        swap_max(arr, l, i);
-    }
-}
+
